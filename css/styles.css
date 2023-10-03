@@ -206,7 +206,7 @@ left: 0;
 .hero-section {
 padding: 188px 0;
 background-color:#2e2f42;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_mob.jpg);
 max-width: 1440px;
 background-repeat: no-repeat;
 background-position: center;
@@ -214,7 +214,47 @@ background-size: cover;
 margin: 0 auto;
 color: aliceblue;
 }
+/* Mobile screen */
+@media only screen and (min-resolution:192dpi){
+  .hero-section{background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_mob@2x.jpg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+}
 
+/* Tablet screen */
+@media only screen and(min-width:768px) {
+  .hero-section {
+    min-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_tabl.jpg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+}
+
+@media only screen and (min-width:768px)and (min-resolution:192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_tabl@2x.jpg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+}
+/* Desctop screen */
+@media only screen and(min-width:1440px) {
+  .hero-section {
+    min-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+}
+@media only screen and (min-width:1140px)and (min-resolution:192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofficedesk@2x.jpg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+}
 .hero-title {
   color: #fff;
   text-align: center;

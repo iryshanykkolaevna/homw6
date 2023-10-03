@@ -29,7 +29,7 @@
           <a class="logo" href="./index.html"
             >Web<span class="logo-accent">Studio</span></a
           >
-          
+
           <ul class="nav-menu">
             <li>
               <a class="nav-link-studio" href="./index.html">Studio</a>
@@ -54,23 +54,22 @@
           </ul>
         </address>
         <button class="header-menu-btn menu-toggle">
-            <svg class="menu-toggle-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-heroicons-solid_menu">
-              </use>
-            </svg>
-          </button>
+          <svg class="menu-toggle-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <!-- Hero section -->
-      <!-- <section class="hero-section">
+      <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- Advantage section -->
       <!-- <section class="advantage-section">
         <div class="container">
@@ -128,7 +127,7 @@
         </div>
       </section> -->
       <!-- Team section -->
-      <section class="team-section">
+      <!-- <section class="team-section">
         <div class="container">
           <h2 class="team-section-title">Our Team</h2>
           <ul class="team-section-list">
@@ -310,15 +309,38 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Portfolio section -->
-      <!-- <section class="portfolio-section">
+      <section class="portfolio-section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-list-cover">
-                <img src="./images/img1.jpg" alt="Banking App" width="360" />
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width:1168px)"
+                    srcset="
+                      ./images/img1png.png     1x,
+                      ./images/img1desk@2x.png 2x
+                    " />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/img1_tab.png    1x,
+                      ./images/img1_tab@2x.png 2x
+                    " />
+                  <!-- Mobile -->
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images/img1_mob.png    1x,
+                      ./images/img1_mob@2x.png 2x
+                    " />
+                  <img src="./images/img1.jpg" alt="Banking App" width="360"
+                /></picture>
                 <p class="portfolio-paragraph">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -411,7 +433,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!-- Footer -->
     <!-- <footer class="footer">
       <div class="container footer-inner">
@@ -575,11 +597,10 @@
     <div class="menu-container">
       <button class="mobile-menu-btn">
         <svg class="mobile-menu-icon" width="8" hight="8">
-          <use href="./images/icons.svg#icon-close-black-18dp-2-1-1">
-          </use>
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
         </svg>
       </button>
-      <ul class="mobile-menu-list ">
+      <ul class="mobile-menu-list">
         <li class="mobile-menu-item">
           <a href="" class="mobile-menu-link carent link">Studio</a>
         </li>
@@ -591,39 +612,49 @@
         </li>
       </ul>
       <ul class="mobile-contacts list">
-        <li class="mobile-contacts-item"><a href="tel:+110001111111" class="mobile-contacts-link sccent link">+11 (000) 111-11-11</a></li>
-        <li class="mobile-contacts-item"><a href="mailto:info@devstudio.com" class="mobile-contacts-link link"></a>info@devstudio.com</li>
+        <li class="mobile-contacts-item">
+          <a href="tel:+110001111111" class="mobile-contacts-link sccent link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-contacts-link link"
+          ></a
+          >info@devstudio.com
+        </li>
       </ul>
       <ul class="mobile-socials list">
-            <li class="mobile-socials-item">
-              <a class="mobile-socials-link link" href="">
-                <svg class="mobile-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-socials-item">
-              <a class="mobile-socials-link link" href="">
-                <svg class="mobile-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-socials-item">
-              <a class="mobile-socials-link link" href="">
-                <svg class="mobile-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-socials-item">
-              <a class="mobile-socials-link link" href="">
-                <svg class="mobile-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a class="mobile-socials-link link" href="">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
