@@ -204,7 +204,7 @@ left: 0;
 /* Hero-section */
 
 .hero-section {
-padding: 188px 0;
+padding: 72px 0;
 background-color:#2e2f42;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_mob.jpg);
 max-width: 1440px;
@@ -258,10 +258,12 @@ color: aliceblue;
 .hero-title {
   color: #fff;
   text-align: center;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  max-width: 200px;
   margin: 0 auto 48px;
+  font-size: 36px;
+
 }
 
 .hero-button {
@@ -292,6 +294,7 @@ padding: 120px 0
 }
 .advantage-list{
   display:flex;
+  flex-direction: column;
   gap: 24px;
 }
 .advantage-item{
@@ -339,6 +342,50 @@ padding: 120px 0
   background-color: #f4f4fd;
   padding: 120px 0;
 }
+/* Mobile screen */
+@media only screen and (min-resolution:192dpi) {
+  .team-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/* Tablet screen */
+@media only screen and(min-width:768px) {
+  .team-section {
+    min-width: 768px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width:768px)and (min-resolution:192dpi) {
+  .team-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/* Desctop screen */
+@media only screen and(min-width:1440px) {
+  .team-section {
+    min-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width:1140px)and (min-resolution:192dpi) {
+  .team-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 
 .team-section-title {
   line-height: 1.11;
@@ -350,6 +397,7 @@ padding: 120px 0
 }
 .team-section-list{
   display: flex;
+    flex-direction: column;
   gap: 24px;
   text-align: center;
 
@@ -432,8 +480,7 @@ background-color: #404bbf;
 
 /* Portfolio section */
 .portfolio-section{
-padding-top: 120px;
-padding-bottom: 120px;
+padding: 96px, 0
 }
 .portfolio-title {
   line-height: 1.11;
@@ -444,7 +491,8 @@ padding-bottom: 120px;
 }
 .portfolio-list{
 display: flex;
-gap: 48px 24px;
+flex-direction: column;
+gap: 48px;
 flex-wrap: wrap;
 }
 .portfolio-item{
