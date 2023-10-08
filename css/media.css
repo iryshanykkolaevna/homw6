@@ -70,6 +70,9 @@
          .nav-link:focus {
              color: var(--c-pressed-state);
          }
+        .nav-menu {
+                     display: none;
+                 }
     
          .nav-link-studio {
              color: var(--c-pressed-state);
@@ -131,7 +134,13 @@
              flex-direction: row;
              gap: 72px 24px;
              flex-wrap: wrap;
+             flex-direction: row;
+
          }
+                 .advantage-icons {
+                     display: none
+        
+                 }
     
          .advantage-item {
              flex-basis: calc((100% - 24px) / 2);
@@ -251,15 +260,7 @@
 
    .advantage-icons {
        display: flex;
-       max-width: 264px;
-       height: 112px;
-       flex-shrink: 0;
-       border-radius: 4px;
-       border: 1px solid var(--lightslate, #8E8F99);
-       background-color: var(--c-light);
-       margin-bottom: 8px;
-       align-items: center;
-       justify-content: center;
+       
    }
 
    .team-section-item {
