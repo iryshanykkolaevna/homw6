@@ -128,7 +128,8 @@
              display: flex;
              align-items: center;
             justify-content: space-between;
-             
+
+            
          }
     
          .contacts-item {
@@ -185,7 +186,7 @@ align-items: flex-start;
             flex-basis: calc((100% - 24px) / 2);
         }
          /* Footer */
-    
+   
          .footer-inner {
              padding-right: 108px;
              padding-left: 108px;

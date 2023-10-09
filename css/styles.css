@@ -664,7 +664,8 @@ align-items: baseline;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #FFFFFF;
-  margin-bottom: 16px;}
+  margin-bottom: 16px;
+margin-top: 72px;}
   
 .footer-social-list{
 display: flex;
@@ -704,6 +705,7 @@ width: 40px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  margin-top: 72px;
 }
 
 .footer-subscribe {
@@ -714,6 +716,8 @@ width: 40px;
   flex-direction: column;
   display: flex;
   gap: 24px;
+  width: 288px;
+    height: 40px;
 }
 
 .label-footer {
