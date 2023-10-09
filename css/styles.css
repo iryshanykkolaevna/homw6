@@ -145,7 +145,6 @@ left: 0;
 }
 .contacts-item {
   display: flex;
-  gap: 40px;
   padding: 24px 0;
   
 }

@@ -60,6 +60,7 @@
 
     .container {
         max-width: 768px;
+
     }
          /* Header */
          .header-menu-btn {
@@ -78,6 +79,7 @@
          }
         .nav-menu {
                      display: none;
+                    align-items: center;
                  }
     
          .nav-link-studio {
@@ -125,7 +127,8 @@
          .header-nav {
              display: flex;
              align-items: center;
-             gap: 120px;
+            justify-content: space-between;
+             
          }
     
          .contacts-item {
