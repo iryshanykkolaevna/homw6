@@ -4,6 +4,13 @@
                 rgba(46, 47, 66, 0.70)),
             url(../images/Dark-bg_mob@2x.jpg)
     }
+    .advantage-icons{
+        display: none;
+    }
+        .footer-social-list {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 }
 @media only screen and (max-width: 767.98px) {
     .menu-nav {
