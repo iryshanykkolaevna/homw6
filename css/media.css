@@ -107,6 +107,7 @@
              transition-property: color;
              transition-duration: 250ms;
              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
          }
     
          .address-box:hover,
@@ -130,6 +131,7 @@
          .contacts-item {
              display: flex;
              flex-direction: column;
+        
          }
          .hero-title{
             font-size: 56px;
@@ -137,6 +139,8 @@
                  /* Advantage section */
      .advantage-item-title {
              text-align: start;
+            font-size: 36px;
+            font-weight: 700;
          }
     
          .advantage-list {
@@ -144,7 +148,7 @@
              gap: 72px 24px;
              flex-wrap: wrap;
              flex-direction: row;
-
+align-items: flex-start;
          }
                  .advantage-icons {
                      display: none
@@ -187,6 +191,7 @@
     
          .footer-logo {
              display: flex;
+        
          }
     
          .footer-container {
